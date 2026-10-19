@@ -1,0 +1,125 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"sepolia:11155111": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "6055604b600b8282823980515f1a607314603f577f4e487b71000000000000000000000000000000000000000000000000000000005f525f60045260245ffd5b305f52607381538281f3fe730000000000000000000000000000000000000000301460806040525f5ffdfea264697066735822122014e1d4b4fa654e6d872c44958f1685a75cb2716489ff84eced60654b6169ab6264736f6c63430008220033",
+			"opcodes": "PUSH1 0x55 PUSH1 0x4B PUSH1 0xB DUP3 DUP3 DUP3 CODECOPY DUP1 MLOAD PUSH0 BYTE PUSH1 0x73 EQ PUSH1 0x3F JUMPI PUSH32 0x4E487B7100000000000000000000000000000000000000000000000000000000 PUSH0 MSTORE PUSH0 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST ADDRESS PUSH0 MSTORE PUSH1 0x73 DUP2 MSTORE8 DUP3 DUP2 RETURN INVALID PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 PUSH0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 EQ RJUMPI 0xD4B4 STATICCALL PUSH6 0x4E6D872C4495 DUP16 AND DUP6 0xA7 TLOAD 0xB2 PUSH18 0x6489FF84ECED60654B6169AB6264736F6C63 NUMBER STOP ADDMOD 0x22 STOP CALLER ",
+			"sourceMap": "2144:7928:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "730000000000000000000000000000000000000000301460806040525f5ffdfea264697066735822122014e1d4b4fa654e6d872c44958f1685a75cb2716489ff84eced60654b6169ab6264736f6c63430008220033",
+			"opcodes": "PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 PUSH0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 EQ RJUMPI 0xD4B4 STATICCALL PUSH6 0x4E6D872C4495 DUP16 AND DUP6 0xA7 TLOAD 0xB2 PUSH18 0x6489FF84ECED60654B6169AB6264736F6C63 NUMBER STOP ADDMOD 0x22 STOP CALLER ",
+			"sourceMap": "2144:7928:0:-:0;;;;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "17000",
+				"executionCost": "92",
+				"totalCost": "17092"
+			},
+			"internal": {
+				"addFacet(struct LibDiamond.DiamondStorage storage pointer,address)": "infinite",
+				"addFunction(struct LibDiamond.DiamondStorage storage pointer,bytes4,uint96,address)": "infinite",
+				"addFunctions(address,bytes4[] memory)": "infinite",
+				"contractOwner()": "infinite",
+				"diamondCut(struct IDiamondCut.FacetCut memory[] memory,address,bytes memory)": "infinite",
+				"diamondStorage()": "infinite",
+				"enforceHasContractCode(address,string memory)": "infinite",
+				"enforceIsContractOwner()": "infinite",
+				"initializeDiamondCut(address,bytes memory)": "infinite",
+				"removeFunction(struct LibDiamond.DiamondStorage storage pointer,address,bytes4)": "infinite",
+				"removeFunctions(address,bytes4[] memory)": "infinite",
+				"replaceFunctions(address,bytes4[] memory)": "infinite",
+				"setContractOwner(address)": "infinite"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": [
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "address",
+							"name": "facetAddress",
+							"type": "address"
+						},
+						{
+							"internalType": "enum IDiamondCut.FacetCutAction",
+							"name": "action",
+							"type": "uint8"
+						},
+						{
+							"internalType": "bytes4[]",
+							"name": "functionSelectors",
+							"type": "bytes4[]"
+						}
+					],
+					"indexed": false,
+					"internalType": "struct IDiamondCut.FacetCut[]",
+					"name": "_diamondCut",
+					"type": "tuple[]"
+				},
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "_init",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"internalType": "bytes",
+					"name": "_calldata",
+					"type": "bytes"
+				}
+			],
+			"name": "DiamondCut",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "previousOwner",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "newOwner",
+					"type": "address"
+				}
+			],
+			"name": "OwnershipTransferred",
+			"type": "event"
+		}
+	]
+}

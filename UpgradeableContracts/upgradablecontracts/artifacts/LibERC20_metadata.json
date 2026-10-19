@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"uups/Diamond/diamond.sol": "LibERC20"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"uups/Diamond/diamond.sol": {
+			"keccak256": "0x61a4ade61e3f7da1404332675bbb1b988517bddfa06ee4d76797b346bbc07dab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1022ecbe2aa55c1e819ba81b061e1e2600dfe6d6a30205b02c74917bcce6a391",
+				"dweb:/ipfs/QmQpBW3F49NNV81DYn2jHBQ5bNk3m25ZTp1emdVqxtZkpX"
+			]
+		}
+	},
+	"version": 1
+}
